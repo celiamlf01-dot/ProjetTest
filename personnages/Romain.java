@@ -9,6 +9,16 @@ this.force = force;
 public String getNom() {
 return nom;
 }
+void recevoirCoup(int forceCoup)
+{
+    if(force>0)
+    this.force-=forceCoup;
+
+    if(force==0){
+        System.out.println("jabandonne");
+    }
+
+}
 public void parler(String texte) {
 System.out.println(prendreParole() + "\"" + texte + "\"");
 }
